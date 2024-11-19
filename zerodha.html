@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title>
+            Visual Studio Code - Code Editor
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .icon-button {
+            border: 1px solid #ccc;
+            padding: 0px 0px;
+            background-color: #f5f5f5;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        .icon-button:hover {
+            background-color: #4f26a7;
+        }
+        .icon-button i {
+            margin-right: 8px;
+        }
+
+        .hidden-text {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        }
+
+        .hidden-text:hover {
+        opacity: 1;
+        }
+    </style>
+    </head>
+	
+<body style="background-color: #ffffff; color: #000000;">
+	<div style="display: flex; justify-content: space-between; margin-left: 10%; margin-right: 10%;">
+            <div style="margin: 5px;">Visual Studio Code</div>
+		    <div style="margin: 5px;">Docs</div>
+            <div style="margin: 5px;">Updates</div>
+            <div style="margin: 5px;">Blog</div>
+            <div style="margin: 5px;">API</div>
+            <div style="margin: 5px;">Extensions</div>
+            <div style="margin: 5px;">FAQs</div>
+            <div style="margin: 5px;margin-right: 15%;">Learn</div>
+        <div class="buttons"; style="display: flex; justify-content: end;"> 
+                <div >
+                <!-- Dark Mode Button -->
+                    <button class="icon-button" id="dark-mode-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                
+                <div>
+                    <button class="icon-button" id="search-docs">
+                        <i class="fas fa-search">Search docs</i>
+                    </button>
+                </div>
+                <!-- Search Docs Button -->
+                
+                <div>
+                    <button class="icon-button" id="download-button">
+                        Download
+                    </button>
+                </div>
+                <!-- Download Button -->
+                
+            </div>
+        
+        </div>
+
+       
+
+        
+		
+	</div>
+	
+	<br/>
+
+	<div style="display: flex; justify-content: center;">
+		<a href="/">Version 1.82</a> is now available! Read about the new features and fixes from July.
+	</div>
+
+	<br/>
+    <div style="display: flex; justify-content: center;">
+        <h1 style="color: var(--header-foreground); font-weight: 700; font-size: 48px; margin-top: 1rem; line-height: 120%; letter-spacing: -0.8px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; margin-top: 20px;
+    margin-bottom: 10px;">Code faster with AI</h1>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <p style="font-size: 26px; max-width: 720px; margin-bottom: 32; text-rendering: optimizeLegibility; display: flex; flex-direction: column;align-items: center;text-align: center;padding: 16px 0;">
+            Visual Studio Code with GitHub Copilot supercharges your code with AI-powered suggestions, right in your editor.
+        </p>
+    </div>
+    
+    <div style="display: flex; justify-content: center;">
+        <button style="background-color: var(--button-primary-background);color: var(--button-primary-foreground);border: 1px solid rgba(255, 255, 255, .08);border-radius: 4px;font-size: 20px;padding: 10px 20px; margin: 10px; background-color: #0078D4;">Download for Windows</button>
+        <button style="background-color: var(--button-primary-background);color: var(--button-primary-foreground);border: 1px solid rgba(255, 255, 255, .08);border-radius: 4px;font-size: 20px;padding: 10px 20px; margin: 10px; background-color: #333333;">Try Github Copilot</button>
+
+    </div>
+    
+    <div style="display: flex; justify-content: center;">
+        <p>
+            <a href="/">Web</a>, <a href="/">Insiders edition</a>, or <a href="/">other platforms</a></p>
+    </div>
+    
+    <div style="display: flex; justify-content: center;">
+        <p class="hidden-text">By using VS Code, you agree to its license and privacy statement.</p>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <img style="width: 70%" src="https://code.visualstudio.com/assets/home/home-screenshot-copilot.png" alt="">
+    </div>
+    <script>
+        document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+          const body = document.body;
+    
+          if (body.style.backgroundColor === 'rgb(18, 18, 18)') {
+            body.style.backgroundColor = '#ffffff';
+            body.style.color = '#000000';
+          } else {
+            body.style.backgroundColor = '#121212';
+            body.style.color = '#ffffff';
+          }
+        });
+      </script>
+    
+</body>
+</html>
